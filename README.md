@@ -1,6 +1,10 @@
 # PredictiveMA-WGAN
 
-Code for 
+Code for the papers "3D Skeleton-based Human Motion Prediction with Manifold-Aware GAN " and "Human Motion Prediction Using Manifold-Aware Wasserstein GAN"
+
+
+https://user-images.githubusercontent.com/105372137/225054588-88c44fed-9446-4560-8d0f-89d13466814a.mp4
+
 
 Dependencies : For training and prediction - python 3.7 - tensorflow 2.2.0 - numpy 1.19.0 - scipy 1.4.1 For quantitative results and visualisation - Matlab R2020a
 
