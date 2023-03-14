@@ -24,3 +24,14 @@ volume = {},
 issn = {},
 pages = {1-8},
 ```
+```
+@ARTICLE{9924242,
+  author={Chopin, Baptiste and Otberdout, Naima and Daoudi, Mohamed and Bartolo, Angela},
+  journal={IEEE Transactions on Biometrics, Behavior, and Identity Science}, 
+  title={3D Skeleton-based Human Motion Prediction with Manifold-Aware GAN}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TBIOM.2022.3215067}}
+```
