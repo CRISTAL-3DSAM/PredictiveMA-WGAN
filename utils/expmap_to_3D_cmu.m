@@ -1,8 +1,8 @@
-function expmap_to_3D_cmu(Data_path,fr)
+function expmap_to_3D_cmu(Data_path,fr,suffix)
 %transform expmap to 3D coordinates
 addpath utils\natsort
-data_path= [Data_path '\expmap\expmap_Check']; %SRVF path
-save_path=[Data_path '\3D\Skeletons'];
+data_path= [Data_path '\expmap\expmap_Check' suffix]; %SRVF path
+save_path=[Data_path '\3D\Skeletons' suffix];
 
 mkdir([Data_path '\3D']);
 

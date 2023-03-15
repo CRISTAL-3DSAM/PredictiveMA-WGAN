@@ -1,4 +1,4 @@
-function SRVF_mean_CMU(Data_path,nb_frames_predict,joints_17)
+function SRVF_mean_CMU(Data_path,nb_frames_predict,joints_17,suffix)
 % compute the mean SRVF used for the tangent space
 addpath utils\SRVFcodes\curveframework/
 addpath utils\natsort
@@ -16,7 +16,7 @@ x_samples_action={};
 fprintf('processing mean SRVF \n');
 
 %%%%%% SRVF %%%%%%%
-data_path= [Data_path '\3D\Skeletons_reduced'];
+data_path= [Data_path '\3D\Skeletons_reduced' suffix];
 save_path=[Data_path '\3D'];
 data_folder=dir(data_path);
 data_folder=data_folder(3:end);
@@ -56,8 +56,7 @@ for i=1:length(data_folder)
 end
 q_mean_action=Karcher_Mean( q_samples_action, x_samples_action, 100,0.9);
 q_mean = q_mean_action;
-save([save_path '\'  'q_mean_data.mat'], 'q_mean');
-
+save([save_path '\'  'q_mean_data' suffix '.mat'], 'q_mean');
 fprintf('Done \n');
 end
 

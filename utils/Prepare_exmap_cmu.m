@@ -1,8 +1,8 @@
-function Prepare_exmap_cmu(Data_path,nb_fr)
+function Prepare_exmap_cmu(Data_path,nb_fr,suffix)
 % prepare expmap data for skeleton transformation
 addpath utils\natsort
-data_path=[Data_path '\expmap\expmap_seq'];
-save_path=[Data_path '\expmap\expmap_Check'];
+data_path=[Data_path '\expmap\expmap_seq' suffix];
+save_path=[Data_path '\expmap\expmap_Check' suffix];
 
 fprintf('Prepare exmap data\n');
 

@@ -1,4 +1,4 @@
-function  Create_SRVF_human(Data_path,nb_frames,nb_frames_prior,nb_frames_predict)
+function  Create_SRVF_human(Data_path,nb_frames,nb_frames_prior,nb_frames_predict,suffix)
 %create SRVF from skeletons
 addpath utils\SRVFcodes/curveframework/
 addpath utils\natsort
@@ -8,11 +8,11 @@ L=17; %number of joint
 l=nb_frames; % number of SRVF frames
 start = 0; % start frame number 
 %% here set the path to save SRVF
-data_path=[Data_path '\3D\Skeletons_reduced'];
-path_SRVF_50 = [Data_path, '\3D\SRVF_prior'];
-path_SRVF_10 = [Data_path, '\3D\SRVF_next'];
-path_intensity_50 = [Data_path '\3D\SRVF_intensity_prior'];
-path_intensity_10 = [Data_path '\3D\SRVF_intensity_next'];
+data_path=[Data_path '\3D\Skeletons_reduced' suffix];
+path_SRVF_50 = [Data_path, '\3D\SRVF_prior' suffix];
+path_SRVF_10 = [Data_path, '\3D\SRVF_next' suffix];
+path_intensity_50 = [Data_path '\3D\SRVF_intensity_prior' suffix];
+path_intensity_10 = [Data_path '\3D\SRVF_intensity_next' suffix];
 
 
 %% path to the skeleton data

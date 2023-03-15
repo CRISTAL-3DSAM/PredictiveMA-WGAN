@@ -1,9 +1,9 @@
-function Prepare_Skeletons_CMU(Data_path,joints_17)
+function Prepare_Skeletons_CMU(Data_path,joints_17,suffix)
 % reformat SBU skeleton files to one file per frame, one point per line (x,y,z)
 
 addpath utils\natsort
-data_path= [Data_path '\3D\Skeletons_reduced'];
-save_path= [Data_path '\3D\Skeletons_Check'];
+data_path= [Data_path '\3D\Skeletons_reduced' suffix];
+save_path= [Data_path '\3D\Skeletons_Check' suffix];
 
 fprintf('preparing skeletons\n');
 

@@ -1,7 +1,7 @@
 function Process_dataset_cmu(data_path,Save_path)
 addpath utils\natsort
 % create on file per frame
-save_path = [Save_path '\expmap\expmap_FULL'];
+save_path = [Save_path '\expmap\expmap_full'];
 
 fprintf('process original dataset\n')
 data_folder=dir(data_path);

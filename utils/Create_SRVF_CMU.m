@@ -1,4 +1,4 @@
-function Create_SRVF_CMU(Data_path,nb_frames,nb_frames_prior,nb_frames_predict,joints_17)
+function Create_SRVF_CMU(Data_path,nb_frames,nb_frames_prior,nb_frames_predict,joints_17,suffix)
 %% create SRVF file for each skeleton
 addpath utils\SRVFcodes/curveframework/
 addpath utils\natsort
@@ -14,11 +14,11 @@ INTENSITY = 1;
 INTENSITY_1=1;
 INTENSITY_2 =1;
 %% here set the path to save SRVF
-data_path=[Data_path '\3D\Skeletons_reduced'];
-path_SRVF_50 = [Data_path, '\3D\SRVF_prior'];
-path_SRVF_10 = [Data_path, '\3D\SRVF_next'];
-path_intensity_50 = [Data_path '\3D\SRVF_intensity_prior'];
-path_intensity_10 = [Data_path '\3D\SRVF_intensity_next'];
+data_path=[Data_path '\3D\Skeletons_reduced' suffix];
+path_SRVF_50 = [Data_path, '\3D\SRVF_prior' suffix];
+path_SRVF_10 = [Data_path, '\3D\SRVF_next' suffix];
+path_intensity_50 = [Data_path '\3D\SRVF_intensity_prior' suffix];
+path_intensity_10 = [Data_path '\3D\SRVF_intensity_next' suffix];
 
 
 %% path to the skeleton data

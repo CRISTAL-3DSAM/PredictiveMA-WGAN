@@ -1,4 +1,4 @@
-function  Full_to_Seq_human(Data_path,nb_target_frame,downsampling,jump)
+function  Full_to_Seq_human(Data_path,nb_target_frame,downsampling,jump,suffix)
 addpath utils\natsort
 % turn full frames sequence into sequence of nb_target_frame
 %downsampling = perform downsampling by 2 default = true for human3.6M
@@ -6,7 +6,7 @@ addpath utils\natsort
 %jump => nb_target_frame then all sequences will contains unique frames
 
 data_path = [Data_path '\expmap\expmap_full']; % csv file folder
-save_path = [Data_path '\expmap\expmap_sequences']; % save folder
+save_path = [Data_path '\expmap\expmap_sequences' suffix]; % save folder
 
 joint_ignore = [];
 

@@ -1,12 +1,12 @@
-function normalize_human(Data_path)
+function normalize_human(Data_path, suffix)
 addpath utils\natsort
 % turn full frames sequence into 60 or 90 frames sequences
 
-data_path = [Data_path '\3D\Skeletons']; % csv file folder
-save_path = [Data_path '\3D\Skeletons_reduced']; % save folder
-mean_path = [Data_path '\3D\MEANS'];
-norm_path = [Data_path '\3D\NORMS'];
-center_path = [Data_path '\3D\CENTERS'];
+data_path = [Data_path '\3D\Skeletons' suffix]; % csv file folder
+save_path = [Data_path '\3D\Skeletons_reduced' suffix]; % save folder
+mean_path = [Data_path '\3D\MEANS' suffix];
+norm_path = [Data_path '\3D\NORMS' suffix];
+center_path = [Data_path '\3D\CENTERS' suffix];
 
 joint_ignore =  [5,6,10,11,12,17,21,22,23,24,25,29,30,31,32]; %17 joints remaining
 

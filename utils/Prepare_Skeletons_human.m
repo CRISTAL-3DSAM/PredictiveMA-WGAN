@@ -1,7 +1,7 @@
-function Prepare_Skeletons_human(Data_path)
+function Prepare_Skeletons_human(Data_path,suffix)
 addpath utils\natsort
-data_path=[Data_path '\3D\Skeletons_reduced'];
-save_path=[Data_path '\3D\Skeletons_Check'];
+data_path=[Data_path '\3D\Skeletons_reduced' suffix];
+save_path=[Data_path '\3D\Skeletons_Check' suffix];
 fprintf('Preparing skeletons\n')
 
 N_joints= 17;

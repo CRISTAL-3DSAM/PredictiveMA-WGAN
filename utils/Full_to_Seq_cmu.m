@@ -1,9 +1,9 @@
-function Full_to_Seq_cmu(Data_path,nb_target_frame,downsampling,jump)
+function Full_to_Seq_cmu(Data_path,nb_target_frame,downsampling,jump, suffix)
 addpath utils\natsort
 % turn full frames sequence into nb_target_frame ones
 
 data_path = [Data_path '\expmap\expmap_full']; % csv file folder
-save_path = [Data_path '\expmap\expmap_seq']; % save folder
+save_path = [Data_path '\expmap\expmap_seq' suffix]; % save folder
 
 fprintf('create proper length sequences\n')
 data_folder=dir(data_path);

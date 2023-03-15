@@ -1,7 +1,7 @@
-function first_frames_CMU(Data_path,Use_17_joints_CMU)
+function first_frames_CMU(Data_path,Use_17_joints_CMU,suffix)
 addpath utils\natsort
-data_path= [Data_path '\3D\Skeletons_Check'];
-save_path= [Data_path '\3D\First_Frames'];
+data_path= [Data_path '\3D\Skeletons_Check' suffix];
+save_path= [Data_path '\3D\First_Frames' suffix];
 
 frame_number = 50;
 

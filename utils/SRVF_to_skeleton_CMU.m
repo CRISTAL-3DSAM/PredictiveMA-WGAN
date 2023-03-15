@@ -1,9 +1,9 @@
-function SRVF_to_skeleton_CMU(Data_path,Use_17_joints_CMU)
+function SRVF_to_skeleton_CMU(Data_path,Use_17_joints_CMU,suffix)
 %reconstruct skeletons from SRVF
 addpath utils
-data_path= [Data_path '\3D\SRVF_next']; %SRVF path
-skeleton_path = [Data_path '\3D\Skeletons_Check'];%skeleton_path .mat format with curve_B variable name
-save_path=[Data_path '\3D\Skeletons_Rebuilt'];
+data_path= [Data_path '\3D\SRVF_next' suffix]; %SRVF path
+skeleton_path = [Data_path '\3D\Skeletons_Check' suffix];%skeleton_path .mat format with curve_B variable name
+save_path=[Data_path '\3D\Skeletons_Rebuilt' suffix];
 
 frame =50; % frame de départ
 if Use_17_joints_CMU

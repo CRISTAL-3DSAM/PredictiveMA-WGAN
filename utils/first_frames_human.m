@@ -1,7 +1,7 @@
-function first_frames_human(Data_path)
+function first_frames_human(Data_path,suffix)
 addpath utils\natsort
-data_path= [Data_path '\3D\Skeletons_Check'];
-save_path= [Data_path '\3D\First_Frames'];
+data_path= [Data_path '\3D\Skeletons_Check' suffix];
+save_path= [Data_path '\3D\First_Frames' suffix];
 
 frame_number = 50;
 

@@ -1,14 +1,14 @@
-function  normalize_CMU(Data_path,Joints_17)
+function  normalize_CMU(Data_path,Joints_17, suffix)
 %normalize skeleton and remove joints
 
 addpath utils\natsort
 fprintf('normalize skeletons \n')
 
-data_path = [Data_path '\3D\Skeletons'];
-save_path = [Data_path '\3D\Skeletons_reduced']; 
-mean_path = [Data_path '\3D\MEANS'];
-norm_path = [Data_path '\3D\NORMS'];
-center_path = [Data_path '\3D\CENTERS'];
+data_path = [Data_path '\3D\Skeletons' suffix];
+save_path = [Data_path '\3D\Skeletons_reduced' suffix]; 
+mean_path = [Data_path '\3D\MEANS' suffix];
+norm_path = [Data_path '\3D\NORMS' suffix];
+center_path = [Data_path '\3D\CENTERS' suffix];
 
 
 if Joints_17

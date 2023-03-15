@@ -1,8 +1,8 @@
-function Prepare_exmap_human(Data_path,nb_fr)
+function Prepare_exmap_human(Data_path,nb_fr,suffix)
 % reformat SBU skeleton files to one file per frame, one point per line (x,y,z)
 addpath utils\natsort
-data_path=[Data_path '\expmap\expmap_sequences'];
-save_path=[Data_path '\expmap\expmap_Check'];
+data_path=[Data_path '\expmap\expmap_sequences' suffix];
+save_path=[Data_path '\expmap\expmap_Check' suffix];
 fprintf('preparing expmaps \n')
 
 N_joints= 33;

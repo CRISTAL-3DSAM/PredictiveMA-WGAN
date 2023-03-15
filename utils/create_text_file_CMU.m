@@ -1,13 +1,13 @@
-function create_text_file_CMU(Data_path)
+function create_text_file_CMU(Data_path, suffix)
 
 fprintf('creating text files for training and testing\n')
-save_path=[Data_path '\3D\Data_train.txt'];
-save_path_test = [Data_path '\3D\Data_test.txt'];
+save_path=[Data_path '\3D\Data_train' suffix '.txt'];
+save_path_test = [Data_path '\3D\Data_test' suffix '.txt'];
 
 
-data_path=[Data_path '\3D\SRVF_next'];
-data_path_partial = [Data_path '\3D\SRVF_prior'];
-skeleton_path = [Data_path '\3D\Skeletons_Check'];
+data_path=[Data_path '\3D\SRVF_next' suffix];
+data_path_partial = [Data_path '\3D\SRVF_prior' suffix];
+skeleton_path = [Data_path '\3D\Skeletons_Check' suffix];
 
 data_folder=dir(data_path);
 data_folder=data_folder(3:end);
@@ -32,15 +32,15 @@ for i=1:length(data_folder)
                 skel = load([skeleton_path '\' data_folder(i).name '\' subj_folders(j).name '\' name(1:3) '\skeleton.mat']);
                 if ~isnan(sum(sum(A.q2n))) && ~isnan(sum(sum(a_part.q2n))) && ~isnan(sum(sum(skel.curve_B)))
                     if  strcmp(data_folder(i).name,'test')
-                        output2(u,1) = {['SRVF_prior/' data_folder(i).name '/' subj_folders(j).name   '/' name]};
-                        output2(u,2) = {['SRVF_next/' data_folder(i).name '/' subj_folders(j).name  '/' name]};
-                        output2(u,3) = {['First_Frames/' data_folder(i).name '/' subj_folders(j).name '/' name(1:3) '/skeleton_pos_050.csv']};
+                        output2(u,1) = {['SRVF_prior' suffix '/' data_folder(i).name '/' subj_folders(j).name   '/' name]};
+                        output2(u,2) = {['SRVF_next' suffix '/' data_folder(i).name '/' subj_folders(j).name  '/' name]};
+                        output2(u,3) = {['First_Frames' suffix '/' data_folder(i).name '/' subj_folders(j).name '/' name(1:3) '/skeleton_pos_050.csv']};
                         u=u+1;
                     else
-                        output(t,1) = {['SRVF_prior/' data_folder(i).name '/' subj_folders(j).name  '/' name]};
-                        output(t,2) = {['SRVF_next/' data_folder(i).name '/' subj_folders(j).name  '/' name]};
-                        output(t,3) = {['First_Frames/' data_folder(i).name '/' subj_folders(j).name  '/' name(1:3) '/skeleton_pos_050.csv']};
-                        output(t,4) = {['Skeletons_Rebuilt/' data_folder(i).name '/' subj_folders(j).name  '/' name(1:3) '/skeleton.mat']};
+                        output(t,1) = {['SRVF_prior' suffix '/' data_folder(i).name '/' subj_folders(j).name  '/' name]};
+                        output(t,2) = {['SRVF_next' suffix '/' data_folder(i).name '/' subj_folders(j).name  '/' name]};
+                        output(t,3) = {['First_Frames' suffix '/' data_folder(i).name '/' subj_folders(j).name  '/' name(1:3) '/skeleton_pos_050.csv']};
+                        output(t,4) = {['Skeletons_Rebuilt' suffix '/' data_folder(i).name '/' subj_folders(j).name  '/' name(1:3) '/skeleton.mat']};
                         t=t+1;
                     end
                 end
