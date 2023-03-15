@@ -2,6 +2,9 @@
 
 Code for the papers "3D Skeleton-based Human Motion Prediction with Manifold-Aware GAN " and "Human Motion Prediction Using Manifold-Aware Wasserstein GAN"
 
+![](https://user-images.githubusercontent.com/105372137/225350201-eab5952e-efa9-4055-94a2-1fc5ab58363c.png)
+
+
 Predict the end of a motion sequence using its beginning
 
 https://user-images.githubusercontent.com/105372137/225054588-88c44fed-9446-4560-8d0f-89d13466814a.mp4
