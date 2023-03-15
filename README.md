@@ -34,8 +34,8 @@ For quantitative results and visualisation
 - run Create_Database.m In the script you can change 'DB_choice' between 'CMU_short', 'CMU_long', 'HM36_short', 'HM36_long' to select the dataset type (long = long term prediction)
 - In PMAWGAN-<dataset name>/Data_skeleton copy the content of the '3D' folder contained in the newly created folder ('CMU_short', 'CMU_long', 'HM36_short', 'HM36_long')
 ```
-```
 **Running the model**
+```
 - launch WGAN.ipynb with notebook (parameters are in the second cell)
    or
 - use 'python Main.py' (parameters are in the file. default Training = False,Short_Term = False for testing on long term prrediction)
