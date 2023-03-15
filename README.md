@@ -5,9 +5,9 @@ Code for the papers "3D Skeleton-based Human Motion Prediction with Manifold-Awa
 Predict the end of a motion sequence using its beginning
 
 https://user-images.githubusercontent.com/105372137/225054588-88c44fed-9446-4560-8d0f-89d13466814a.mp4
-
-
-
+ 
+ 
+ 
 **Dependencies :**
 
 For training and prediction 
@@ -20,7 +20,9 @@ For quantitative results and visualisation
 - Matlab R2020a
 
 **Instructions**
-
+```
+Download the Human3.6M database at [https://arxiv.org/pdf/2207.01685.pdf]([[https://arxiv.org/pdf/2207.01685.pdf](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip)](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip)
+```
 
 
 predicting motion - launch in jupyter - parameters are in the second cell
