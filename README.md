@@ -95,4 +95,4 @@ pages = {1-8},
 
 **Acknowledgements**
 
-this project has recieved financial support from the CNRS  through the 80-prime  program.
+This project has received financial support from the CNRS through the 80—Prime program and from the French State, managed by the National Agency for Research (ANR) under the Investments for the future program with reference ANR-16-IDEX-0004 ULNE. This work has been supported by ”La Fédération de Recherche Sciences et Cultures du Visuel” (FR CNRS 2052), and by a State grant managed by the National Research Agency under the Programme d’Investissements d’Avenir with the reference ANR-21-ESRE-0030 - Equipex+ Continuum. 
